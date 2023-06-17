@@ -5,26 +5,33 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    title: "GOLD MEDAL for on-the-spot painting (2018)",
+    cardImage: "assets/images/pankaj/image-from-rawpixel-id-6431100-png.png",
+    place: "Art",
+    time: "2018",
+    desp: "<li>Gold Medal</li>",
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
+    title: "GOLD MEDAL for on-the-spot landscape competition Kolhapur (2018)",
+    cardImage: "assets/images/pankaj/image-from-rawpixel-id-6431100-png.png",
+    place: "Art",
+    time: "2018",
+    desp: "<li>Gold Medal</li>",
   },
   {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
-    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
-  },
+    title: "FIRST PRICE in state-level landscape competition Ichalkaranji (2020)",
+    cardImage: "assets/images/pankaj/image-from-rawpixel-id-6431100-png.png",
+    place: "Art",
+    time: "2020",
+    desp: "<li>First Price</li>", 
+   },
+   {
+    title: "SECOND PRICE in state-level landscape competition Karad (2020)",
+    cardImage: "assets/images/pankaj/image-from-rawpixel-id-6431100-png.png",
+    place: "Art",
+    time: "2020",
+    desp: "<li>Second Price</li>", 
+   },
 ];
 
 const showCards2 = () => {
@@ -34,7 +41,7 @@ const showCards2 = () => {
       (output += `        
     <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
       <div class="card card1">
-        <img src="${cardImage}" class="featured-image"/>
+        <img src="${cardImage}"  class="featured-image"/>
         <article class="card-body">
           <header>
             <div class="title">
@@ -44,9 +51,6 @@ const showCards2 = () => {
               <span class="pre-heading">${place}</span><br>
               <span class="author">${time}</span>
             </p>
-            <ol>
-              ${desp}
-            </ol>
           </header>
         </article>
       </div>
@@ -62,29 +66,17 @@ document.addEventListener("DOMContentLoaded", showCards2);
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
   {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/1.jpg",
+    title: "IDEAL ENGLISH MEDIUM SCHOOL,MIRAJ (2019)",
+    cardImage: "assets/pankaj/painting-cartoon-royalty-free-drawing-painting-children-c0138bd2debf66ce5a7106de9459e851.png",
     description:
       "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
   },
   {
-    title: "StudentCode-in 2020",
-    cardImage: "assets/images/experience-page/2.jpg",
+    title: "KALAWISHAV MAHAVIDHYALY SANGLI (2022)",
+    cardImage: "assets/pankaj/painting-cartoon-royalty-free-drawing-painting-children-c0138bd2debf66ce5a7106de9459e851.png",
     description:
       "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
-  },
-  {
-    title: "PClub Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/3.jpg",
-    description:
-      "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
-  },
-  {
-    title: "Hakin-Codes",
-    cardImage: "assets/images/experience-page/4.jpg",
-    description:
-      "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
-  },
+  }
 ];
 
 const showCards = () => {
